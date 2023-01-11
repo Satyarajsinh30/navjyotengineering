@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAVJYOT_ABOUT_US</title>
+    <link rel="stylesheet" href="style_contact.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <img src="/images/logo.png" alt="" />
+      </div>
+      <div id="head"><h2>NAVJYOT ENGINEERING</h2></div>
+      <ul>
+        <li class="item"><a href="index.html">HOME</a></li>
+        <li class="item">
+          <a href="navjyot_our_facil.html">OUR FACILITIES</a>
+        </li>
+        <li class="item"><a href="navjyot2_about_us.html">ABOUT US</a></li>
+        <li class="item"><a href="navjyot_contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <div class="whole">
+      <div class="get">
+        <h1>Get in touch with us!</h1>
+      </div>
+      <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <label for="fname">Your Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
+          <label for="Contact No.">Contact No.</label>
+          <input
+            type="tel"
+            id="Contact"
+            name="Contact"
+            placeholder="Contact No. ..."
+          />
+          <label for="Email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email..."
+          />
+          <div>
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="how can we help you.."
+              style="height: 200px"
+            ></textarea>
+          </div>
+
+          <button type="submit">send</button>
+        </form>
+      </div>
+    </div>
+    <div class="end">
+      <div class="cont">
+        <h3>Contact Us:</h3>
+        <p>Mobile no.</p>
+        <p>Email : navjyotengineering@yahoo.com navjyoteng@gmail.com</p>
+        <p>
+          Shed no. A/15,Mahadev estate-ii, b/h ramol police station, Ramol road,
+          CTM Ahmedabad, Gujarat - 382449 India
+        </p>
+      </div>
+
+      <div class="loc">
+        <a href="https://goo.gl/maps/BcoSp61XxwhBpXxS6" target="_blank"
+          ><img src="/images/loc_2.png" alt=""
+        /></a>
+      </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          SecureToken: "7190a70e-12f4-4965-bcfb-fb4d3e37a14b",
+          To: "luffukun9009@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "New Enquiry",
+          Body:
+            "Name: " +
+            document.getElementById("fname").value +
+            "<br> Email:  " +
+            document.getElementById("email").value +
+            "<br> Contact No.:  " +
+            document.getElementById("Contact").value +
+            "<br> Message:  " +
+            document.getElementById("subject").value,
+        }).then((message) => alert("Message Sent Succesfully"));
+      }
+    </script>
+  </body>
+</html>

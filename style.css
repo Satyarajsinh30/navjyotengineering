@@ -1,0 +1,412 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+  transition: 0.6s;
+}
+nav.sticky{
+  padding: 5px 20px;
+  background:white;
+}
+nav.sticky ul li a {
+  color: black;
+
+}
+#logo img{
+    margin: 10px 0px 10px 50px;
+    width: 50%;
+}
+#head{
+    width: 15%;
+    align-items: center;
+    color: black;
+}
+#navbar{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content:"" ;
+    background-color: white;
+  /*  background-image: url(/images/bg_new_4.jpg);*/
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+}
+#navbar ul li{
+    font-size: 1.3rem;
+    list-style: none;
+}
+#navbar ul li a{
+    padding: 5px 20px;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    transition: 0.6s;
+}
+#navbar ul li a:hover{
+    background-color: rgb(189, 189, 189);
+    color: black;
+}
+.back img{
+    width: 100%;
+}
+.aim{
+    margin: 40px 50px;
+    display: flex;
+    font-family: 'Aref Ruqaa Ink', serif;
+}
+.aim #aim_1{
+    display: block;
+    width: 30%;
+    margin: 10px 40px;
+    font-size: 24px;
+}
+.aim #aim_2{
+    display: block;
+    width: 50%;
+    margin: 10px 50px;
+}
+.aim #aim_2 p{
+    font-size: 25px;
+}
+/* why choose us vaado*/
+.why{
+    display: flex;
+    margin: 10px 50px;
+}
+.photo1{
+    text-align: center;
+}
+.photo1 p{
+    font-family: cursive;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+.photo2{
+    margin-top: 40px;
+    text-align: center;
+}
+.photo2 h2{
+    margin-top: 7px;
+}
+.photo2 p{
+    font-family: cursive;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+.photo3{
+    margin-top: 40px;
+    text-align: center;
+}
+.photo3 p{
+    font-family: cursive;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+/* why choose us vado end*/
+/* copy da*/
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Verdana, sans-serif;
+  }
+  .mySlides {
+    position: relative;
+    display: none;
+  }
+  img {
+    vertical-align: middle;
+    opacity: 0.8;
+  }
+.slideshow-container img{
+    height: 600px;
+    width: 100%;
+
+}
+  /* Slideshow container */
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+  }
+
+  /* Caption text */
+  .text {
+    color: #000000;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 300px;
+    left: 80px;
+    width: 30%;
+  }
+  .text_2 {
+    color: black;
+    font-size: 40px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 200px;
+    left: 40px;
+    width: 45%;
+  }
+  .text_3 {
+    color: black;
+    font-size: 40px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 200px;
+    right: 30px;
+    width: 45%;
+  }
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {
+      font-size: 11px;
+    }
+  }
+
+  .choose{
+    padding-left: 40px;
+    padding-top: 20px;
+    color: black;
+    padding-bottom: 20px;
+  }
+  .end{
+    background-color: #446290;
+    margin-top: 100px;
+    padding-top: 40px;
+    padding-left: 60px;
+    font-size: 20px;
+    padding-bottom: 40px;
+  }
+  .end{
+    display: flex;
+  }
+  .cont{
+    color: white;
+    margin-left: 100px;
+    width: 40%;
+  }
+  .loc a img{
+    width: 50%;
+    margin-left: 200px;
+  }
+  @media screen and (max-width:480px)
+  {
+    #logo img{
+      margin: 0.7em 0.7em 0.7em 0.7em;
+      width: 60%;
+  }
+  #head{
+      width: 10%;
+      align-items: center;
+      color: black;
+      font-size: 0.4em;
+      margin-left: -8px;
+  }
+  #navbar{
+      display: flex;
+      background-color: white;
+      align-items: center;
+      position: relative;
+  }
+  #navbar ul{
+      display: flex;
+      margin-left: 20px;
+  }
+  #navbar::before{
+      content:"" ;
+      background-color: white;
+    /*  background-image: url(/images/bg_new_4.jpg);*/
+      width: 100%;
+      position: absolute;
+      height: 100%;
+      z-index: -1;
+  }
+  #navbar ul li{
+      font-size: 0.5em;
+      list-style: none;
+  }
+  #navbar ul li a{
+      padding: 0.5em 2em;
+      display: block;
+      border-radius: 1em;
+      text-decoration: none;
+      color: black;
+  }
+  #navbar ul li a:hover{
+      background-color: rgb(189, 189, 189);
+      color: black;
+  }
+  .end{
+    background-color: #b2d8d9;
+    padding-bottom: 2em;
+    margin-left: 0em;
+    padding-left: 0px;
+  }
+  .end{
+    display: flex;
+  }
+  .cont{
+    margin-left: 0px;
+    padding-left: 10px;
+    font-size: 0.5em;
+  }
+  .loc{
+    align-content: center;
+  }
+  .loc a img{
+    margin: 0px 0px 0px 30px;
+    padding: 0px 0px 0px 0px;
+    width: 60%;
+    height: 70%;
+  }
+  .aim{
+    margin: 1em 2em;
+    display: flex;
+    font-family: 'Aref Ruqaa Ink', serif;
+}
+.aim #aim_1{
+    display: block;
+    width: 30%;
+    margin: 0.4em 1em;
+    font-size: 0.7em;
+}
+.aim #aim_2{
+    display: block;
+    width: 50%;
+    margin: 0.1em 1.5em;
+}
+.aim #aim_2 p{
+    font-size: 0.7em;
+}
+.why{
+  display: flex;
+  margin: 0.1em 0.8em;
+  font-size: 0.7em;
+}
+.photo1{
+  text-align: center;
+}
+.photo1 p{
+  font-family: cursive;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  margin-top: 0.1em;
+}
+.photo1 h2{
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+.photo2{
+  margin-top: 0.4em;
+  text-align: center;
+}
+.photo2 h2{
+  margin-top: 0.1em;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+.photo2 p{
+  font-family: cursive;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  margin-top: 0.1em;
+}
+.photo3{
+  margin-top: 0.4em;
+  text-align: center;
+}
+.photo3 p{
+  font-family: cursive;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  margin-top: 0.1em;
+}
+.photo3 h2{
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+.text {
+  color: #000000;
+  font-size: 0.7em;
+  padding: 0.1em 0.2em;
+  position: absolute;
+  bottom: 10em;
+  left: 5em;
+  width: 30%;
+}
+.text_2 {
+  color: black;
+  font-size: 0.7em;
+  padding: 0.1em 0.2em;
+  position: absolute;
+  bottom: 8em;
+  left: 1em;
+  width: 45%;
+}
+.text_3 {
+  color: black;
+  font-size: 0.7em;
+  padding: 0.1em 0.2em;
+  position: absolute;
+  bottom: 8em;
+  right: 0.8em;
+  width: 45%;
+}
+#img_img{
+  width: 100%;
+  height: 30vh;
+}
+  }

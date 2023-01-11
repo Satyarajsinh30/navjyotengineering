@@ -1,0 +1,277 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#logo img{
+    margin: 10px 0px 10px 50px;
+    width: 50%;
+}
+#head{
+    width: 15%;
+    align-items: center;
+    color: black;
+}
+#navbar{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content:"" ;
+    background-color: white;
+  /*  background-image: url(/images/bg_new_4.jpg);*/
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+}
+#navbar ul li{
+    font-size: 1.3rem;
+    list-style: none;
+}
+#navbar ul li a{
+    padding: 5px 20px;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+}
+#navbar ul li a:hover{
+    background-color: rgb(189, 189, 189);
+    color: black;
+}
+.end{
+    background-color: #446290;
+    padding-top: 40px;
+    padding-left: 60px;
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+  .end{
+    display: flex;
+  }
+  .cont{
+    margin-left: 100px;
+    width: 40%;
+  }
+  .loc a img{
+    width: 50%;
+    margin-left: 200px;
+  }
+  .get{
+    text-align: center;
+    padding-top: 60px;
+  }
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select , tel , email, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  input{
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical;
+  }
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #35b2b4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  form button{
+    background-color: #35b2b4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #458fa0;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px;
+    width: 60%;
+    margin-top: 50px;
+    margin-left: 300px;
+  }
+  .whole{
+    background-color: #b2d8d9;
+  }
+  .end{
+    background-color: #b2d8d9;
+    padding-top: 40px;
+    padding-left: 60px;
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+  .end{
+    display: flex;
+  }
+  .cont{
+    margin-left: 200px;
+    width: 40%;
+  }
+  .loc a img{
+    width: 50%;
+    margin-left: 250px;
+  }
+  @media screen and (max-width: 480px)
+  {
+    #logo img{
+      margin: 0.7em 0.7em 0.7em 0.7em;
+      width: 60%;
+  }
+  #head{
+      width: 10%;
+      align-items: center;
+      color: black;
+      font-size: 0.4em;
+      margin-left: -8px;
+  }
+  #navbar{
+      display: flex;
+      background-color: white;
+      align-items: center;
+      position: relative;
+  }
+  #navbar ul{
+      display: flex;
+      margin-left: 20px;
+  }
+  #navbar::before{
+      content:"" ;
+      background-color: white;
+    /*  background-image: url(/images/bg_new_4.jpg);*/
+      width: 100%;
+      position: absolute;
+      height: 100%;
+      z-index: -1;
+  }
+  #navbar ul li{
+      font-size: 0.5em;
+      list-style: none;
+  }
+  #navbar ul li a{
+      padding: 0.5em 2em;
+      display: block;
+      border-radius: 1em;
+      text-decoration: none;
+      color: black;
+  }
+  #navbar ul li a:hover{
+      background-color: rgb(189, 189, 189);
+      color: black;
+  }
+    .get{
+      text-align: center;
+      padding-top: 2em;
+      font-size: 0.5em;
+    }
+    /* Style inputs with type="text", select elements and textareas */
+  input[type=text], select , tel , email, textarea {
+      width: 100%; /* Full width */
+      padding: 1em; /* Some padding */ 
+      border: 1px solid #ccc; /* Gray border */
+      border-radius: 0.4em; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 0.6em; /* Add a top margin */
+      margin-bottom: 1em; /* Bottom margin */
+      resize: vertical; 
+      font-size: 0.5em;
+    }
+    input{
+      width: 100%; /* Full width */
+      padding: 1em; /* Some padding */ 
+      border: 1px solid #ccc; /* Gray border */
+      border-radius: 0.4em; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 0.6em; /* Add a top margin */
+      margin-bottom: 1em; /* Bottom margin */
+      resize: vertical;
+      font-size: 0.5em;
+    }
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+      background-color: #35b2b4;
+      color: white;
+      padding: 1em 2em;
+      border: none;
+      border-radius: 1em;
+      cursor: pointer;
+    }
+    form button{
+      background-color: #35b2b4;
+      color: white;
+      padding: 1em 2em;
+      border: none;
+      border-radius: 1em;
+      cursor: pointer;
+      width: 100%;
+    }
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+      background-color: #458fa0;
+    }
+    
+    /* Add a background color and some padding around the form */
+    .container {
+      border-radius: 1em;
+      background-color: #f2f2f2;
+      padding: 1em;
+      width: 50%;
+      margin-top: 1.5em;
+      margin-left: 4em;
+      margin-right: 4em;
+    }
+    .whole{
+      background-color: #b2d8d9;
+    }
+    .end{
+      background-color: #b2d8d9;
+      padding-bottom: 2em;
+      margin-left: 0em;
+      padding-left: 0px;
+    }
+    .end{
+      display: flex;
+    }
+    .cont{
+      margin-left: 0px;
+      padding-left: 10px;
+      font-size: 0.5em;
+    }
+    .loc{
+      align-content: center;
+    }
+    .loc a img{
+      margin: 0px 0px 0px 30px;
+      padding: 0px 0px 0px 0px;
+      width: 60%;
+      height: 70%;
+    }
+  }

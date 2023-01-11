@@ -1,0 +1,278 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#logo img{
+    margin: 10px 0px 10px 50px;
+    width: 50%;
+}
+#head{
+    width: 15%;
+    align-items: center;
+    color: black;
+}
+#navbar{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content:"" ;
+    background-color: white;
+  /*  background-image: url(/images/bg_new_4.jpg);*/
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+}
+#navbar ul li{
+    font-size: 1.3rem;
+    list-style: none;
+}
+#navbar ul li a{
+    padding: 5px 20px;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+}
+#navbar ul li a:hover{
+    background-color: rgb(189, 189, 189);
+    color: black;
+}
+/**/
+.end{
+    background-color:#446290;
+    margin-top: 100px;
+    padding-top: 40px;
+    padding-left: 60px;
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+  .end{
+    display: flex;
+  }
+  .cont{
+    color: white;
+    margin-left: 100px;
+    width: 40%;
+  }
+  .loc a img{
+    width: 50%;
+    margin-left: 200px;
+  }
+  /* SAME EVERYEWHERE*/
+  .content_ab{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .inspire{
+    font-size: 30px;
+    padding-top: 50px;
+    padding-left: 50px;
+    font-family: 'Aref Ruqaa Ink', serif;
+  }
+  .contt{
+    font-size: 24px;
+    font-family: 'Aref Ruqaa Ink', serif;
+    padding-top: 70px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 180%;
+  }
+  .head_about{
+    text-align: center;
+    margin-top: 8px;
+    font-family: 'Aref Ruqaa Ink', serif;
+  }
+  .mission{
+    background-color: rgb(45, 40, 40);
+    color: white;
+    display: flex;
+    margin-top: 100px;
+    font-family: 'Aref Ruqaa Ink', serif;
+  }
+  .plane{
+    display:block;
+  }
+  .miss_con{
+    margin-left: 60px;
+    margin-top: 60px;
+    width: 50%;
+  }
+  .viss_con{
+    margin-top: 60px;
+    width: 50%;
+    margin-right: 60px;
+  }
+
+  .miss_con p,.viss_con p{
+    font-size:larger;
+    margin-top: 20px;
+  }
+  hr{
+    margin-top: 10px;
+  }
+  .engage{
+    display: flex;
+    margin-top: 50px;
+    font-family: 'Aref Ruqaa Ink', serif;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .engage_abt{
+    font-size: 24px;
+    width: 90%;
+    margin-right: 40px;
+  }
+  .engage_qt{
+    font-size: 30px;
+    width: 50%;
+  }
+  @media screen and (max-width: 480px)
+  {
+    #logo img{
+      margin: 0.7em 0.7em 0.7em 0.7em;
+      width: 60%;
+  }
+  #head{
+      width: 10%;
+      align-items: center;
+      color: black;
+      font-size: 0.4em;
+      margin-left: -8px;
+  }
+  #navbar{
+      display: flex;
+      background-color: white;
+      align-items: center;
+      position: relative;
+  }
+  #navbar ul{
+      display: flex;
+      margin-left: 20px;
+  }
+  #navbar::before{
+      content:"" ;
+      background-color: white;
+    /*  background-image: url(/images/bg_new_4.jpg);*/
+      width: 100%;
+      position: absolute;
+      height: 100%;
+      z-index: -1;
+  }
+  #navbar ul li{
+      font-size: 0.5em;
+      list-style: none;
+  }
+  #navbar ul li a{
+      padding: 0.5em 2em;
+      display: block;
+      border-radius: 1em;
+      text-decoration: none;
+      color: black;
+  }
+  #navbar ul li a:hover{
+      background-color: rgb(189, 189, 189);
+      color: black;
+  }
+  .end{
+    padding-bottom: 2em;
+    margin-left: 0em;
+    padding-left: 0px;
+  }
+  .end{
+    display: flex;
+  }
+  .cont{
+    margin-left: 0px;
+    padding-left: 10px;
+    font-size: 0.5em;
+  }
+  .loc{
+    align-content: center;
+  }
+  .loc a img{
+    margin: 0px 0px 0px 30px;
+    padding: 0px 0px 0px 0px;
+    width: 60%;
+    height: 70%;
+  }
+  .content_ab{
+    display: flex;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .inspire{
+    font-size: 0.7em;
+    padding-top: 1em;
+    padding-left: 0.5em;
+    font-family: 'Aref Ruqaa Ink', serif;
+    width: 100%;
+  }
+  .contt{
+    font-size: 0.7em;
+    font-family: 'Aref Ruqaa Ink', serif;
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+  }
+  .head_about{
+    text-align: center;
+    margin-top: 8px;
+    font-family: 'Aref Ruqaa Ink', serif;
+  }
+  .mission{
+    background-color: rgb(45, 40, 40);
+    color: white;
+    display: flex;
+    margin-top: 1em;
+    font-family: 'Aref Ruqaa Ink', serif;
+  }
+  .plane{
+    display:block;
+    width: 150%;
+  }
+  .miss_con{
+    margin-left: 1em;
+    margin-top: 1em;
+    width: 50%;
+  }
+  .viss_con{
+    margin-top: 1em;
+    width: 50%;
+    margin-right: 1em;
+  }
+
+  .miss_con p,.viss_con p{
+    font-size:  0.7em;
+    margin-top: 10px;
+  }
+  hr{
+    margin-top: 8px;
+  }
+  .engage{
+    display: flex;
+    margin-top: 5px;
+    font-family: 'Aref Ruqaa Ink', serif;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .engage_abt{
+    font-size: 0.7em;
+    width: 90%;
+    margin-right: 1em;
+    margin-top: 1em;
+  }
+  .engage_qt{
+    margin-top: 1em;
+    font-size: 0.7em;
+    width: 50%;
+  }
+  }
