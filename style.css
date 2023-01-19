@@ -290,7 +290,7 @@ nav.sticky ul li a {
       color: black;
   }
   .end{
-    background-color: #b2d8d9;
+    background-color: #446290;
     padding-bottom: 2em;
     margin-left: 0em;
     padding-left: 0px;
@@ -313,20 +313,28 @@ nav.sticky ul li a {
     height: 70%;
   }
   .aim{
-    margin: 1em 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
     display: flex;
     font-family: 'Aref Ruqaa Ink', serif;
 }
 .aim #aim_1{
     display: block;
     width: 30%;
-    margin: 0.4em 1em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    margin-left: 0em;
     font-size: 0.7em;
 }
 .aim #aim_2{
     display: block;
     width: 50%;
-    margin: 0.1em 1.5em;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    margin-right: 0.1em;
+    margin-left: 0.1em;
 }
 .aim #aim_2 p{
     font-size: 0.7em;
