@@ -1,3 +1,6 @@
+const ADDRESS = '86, Gopal Charan Industrial Exotica, Dhamatvan to Undrel Road, Undrel, Ahmedabad – 382433'
+const MAPS_LINK = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ADDRESS)}`
+
 export default function Footer() {
   return (
     <footer className="border-t border-line bg-ink text-paper-2">
@@ -15,12 +18,20 @@ export default function Footer() {
         <div>
           <p className="font-mono text-xs uppercase tracking-[0.15em] text-blueprint-light">Address</p>
           <p className="mt-2 text-sm leading-relaxed text-paper-2/75">
-            Shed no. A/15, Mahadev Estate-II,
+            86, Gopal Charan Industrial Exotica,
             <br />
-            b/h Ramol Police Station, Ramol Road,
+            Dhamatvan to Undrel Road, Undrel,
             <br />
-            CTM, Ahmedabad, Gujarat – 382449, India
+            Ahmedabad – 382433, India
           </p>
+          <a
+            href={MAPS_LINK}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-2 inline-block font-mono text-xs uppercase tracking-wide text-oxide hover:underline"
+          >
+            View on map →
+          </a>
         </div>
 
         <div>
@@ -33,14 +44,6 @@ export default function Footer() {
               navjyoteng@gmail.com
             </a>
           </p>
-          <a
-            href="https://goo.gl/maps/BcoSp61XxwhBpXxS6"
-            target="_blank"
-            rel="noreferrer"
-            className="mt-3 inline-block font-mono text-xs uppercase tracking-wide text-oxide hover:underline"
-          >
-            View on map →
-          </a>
         </div>
       </div>
 

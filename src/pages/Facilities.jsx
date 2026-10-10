@@ -1,47 +1,48 @@
+import { VmcIcon, TurningIcon, DrillIcon, BandsawIcon, CaliperIcon } from '../components/MachineIcons.jsx'
+
 const machines = [
   {
     title: 'Vertical Machining Centers',
-    image: '/images/machine-vmc.webp',
+    Icon: VmcIcon,
     models: ['BFW 50 TC-24 · 600×400×400', 'COSMOS-1060 · 1050×610×600', 'BFW XTRON-544 · 500×400×350'],
     body: 'Three VMCs on the floor, covering milling, boring, drilling, tapping and thread cutting in one setup.',
   },
   {
     title: 'CNC Turning Centers',
-    image: '/images/machine-cnc.webp',
+    Icon: (p) => <TurningIcon variant="cnc" {...p} />,
     models: ['LOKESH-TL-30-XL · 300×500', 'LMW-SMARTTURN · 165×250', 'BALTIBOI · 300×500'],
     body: 'Rotating-bar turning work, sized for both small precision components and larger diameter jobs.',
   },
   {
     title: 'Lathe Machines',
-    image: '/images/machine-lathe.webp',
+    Icon: (p) => <TurningIcon variant="lathe" {...p} />,
     models: ["10'10\" center", "9'10\" center", "7'12\" center", "7'10\" center"],
     body: 'Four conventional lathes for cutting, sanding, knurling and drilling operations.',
   },
   {
     title: 'Drilling Machines',
-    image: '/images/machine-radial-drill.webp',
-    imageSecondary: '/images/machine-drill.webp',
+    Icon: DrillIcon,
     models: ['Radial drill · up to 38mm', 'Pillar drill · up to 25mm'],
     body: 'A radial drill and pillar drill cover most hole-drilling needs on the floor.',
   },
   {
     title: 'Bandsaw Machine',
-    image: '/images/machine-bandsaw.png',
+    Icon: BandsawIcon,
     models: ['Cutting capacity · up to 200mm dia'],
     body: 'Used ahead of machining, for precise stock cutting before a part goes to the next operation.',
   },
 ]
 
 const instruments = [
-  ['Bore gauge', '6–12 / 18–35 / 35–60 / 50–150 / 150–250mm'],
-  ['Height gauge', '0–600mm'],
-  ['Micrometers', '0–300mm'],
-  ['Vernier calipers', '0–450mm'],
-  ['Dial vernier', '0–300mm'],
-  ['Dial indicator', '10mm, 2 nos.'],
-  ['Ring gauge', '3–30mm'],
-  ['Thread plug', '3–12mm'],
-  ['Plain plug gauge', '3–35mm'],
+  'Bore gauge',
+  'Height gauge',
+  'Micrometers',
+  'Vernier calipers',
+  'Dial vernier',
+  'Dial indicator',
+  'Ring gauge',
+  'Thread plug',
+  'Plain plug gauge',
 ]
 
 export default function Facilities() {
@@ -64,19 +65,8 @@ export default function Facilities() {
         <div className="mx-auto max-w-6xl divide-y divide-line border-b border-line px-5 sm:px-8">
           {machines.map((m) => (
             <div key={m.title} className="grid gap-6 py-10 sm:grid-cols-[140px_1fr] sm:gap-8">
-              <div className={`flex gap-2 ${m.imageSecondary ? '' : ''}`}>
-                <img
-                  src={m.image}
-                  alt={m.title}
-                  className="h-[140px] w-[140px] shrink-0 border border-line object-cover"
-                />
-                {m.imageSecondary && (
-                  <img
-                    src={m.imageSecondary}
-                    alt={`${m.title} detail`}
-                    className="hidden h-[140px] w-[140px] shrink-0 border border-line object-cover sm:block"
-                  />
-                )}
+              <div className="flex h-[140px] w-[140px] shrink-0 items-center justify-center border border-line bg-paper-2 text-blueprint">
+                <m.Icon className="h-20 w-20" />
               </div>
               <div>
                 <h2 className="font-display text-xl font-semibold text-ink">{m.title}</h2>
@@ -97,32 +87,30 @@ export default function Facilities() {
         </div>
       </section>
 
+      {/* Measuring instruments — condensed to a supporting note rather than
+          a full section, since every workshop carries basic measuring gear.
+          Kept brief mainly as a quick trust signal that everything is
+          calibrated, not as a headline capability. */}
       <section className="bg-paper-2">
-        <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8">
-          <div className="grid gap-10 md:grid-cols-[1fr_1.1fr] md:items-start">
-            <div>
-              <h2 className="font-display text-2xl font-semibold text-ink">Measuring instruments</h2>
-              <p className="mt-3 max-w-sm text-sm leading-relaxed text-ink/65">
-                Precision parts need precision measurement — every instrument
-                on our floor is calibrated.
-              </p>
-              <img
-                src="/images/machine-measuring.webp"
-                alt="Calibrated measuring instruments"
-                className="mt-6 w-full border border-line object-cover"
-              />
+        <div className="mx-auto max-w-6xl px-5 py-10 sm:px-8">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex items-center gap-3">
+              <CaliperIcon className="h-9 w-9 shrink-0 text-blueprint" />
+              <div>
+                <h2 className="font-display text-lg font-semibold text-ink">Measuring &amp; inspection</h2>
+                <p className="text-sm text-ink/60">Every instrument on the floor is calibrated.</p>
+              </div>
             </div>
-
-            <table className="w-full border-collapse text-sm">
-              <tbody>
-                {instruments.map(([name, range]) => (
-                  <tr key={name} className="border-b border-line">
-                    <td className="py-3 pr-4 text-ink/80">{name}</td>
-                    <td className="py-3 text-right font-mono text-xs text-ink/50">{range}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+            <div className="flex flex-wrap gap-2">
+              {instruments.map((item) => (
+                <span
+                  key={item}
+                  className="rounded-sm border border-line bg-paper px-2.5 py-1 font-mono text-[11px] text-ink/55"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </section>

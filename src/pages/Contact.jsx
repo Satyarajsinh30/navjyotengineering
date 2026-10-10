@@ -1,6 +1,8 @@
 import { useState } from 'react'
 
 const initialForm = { name: '', phone: '', email: '', message: '' }
+const ADDRESS = '86, Gopal Charan Industrial Exotica, Dhamatvan to Undrel Road, Undrel, Ahmedabad – 382433'
+const MAPS_EMBED_SRC = `https://www.google.com/maps?q=${encodeURIComponent(ADDRESS)}&output=embed`
 
 export default function Contact() {
   const [form, setForm] = useState(initialForm)
@@ -39,8 +41,8 @@ export default function Contact() {
               <div>
                 <p className="font-mono text-[11px] uppercase tracking-wide text-ink/40">Address</p>
                 <p className="mt-1 leading-relaxed">
-                  Shed no. A/15, Mahadev Estate-II, b/h Ramol Police Station,
-                  Ramol Road, CTM, Ahmedabad, Gujarat – 382449, India
+                  86, Gopal Charan Industrial Exotica, Dhamatvan to Undrel
+                  Road, Undrel, Ahmedabad – 382433, India
                 </p>
               </div>
               <div>
@@ -53,18 +55,16 @@ export default function Contact() {
                 </a>
               </div>
             </div>
-            <a
-              href="https://goo.gl/maps/BcoSp61XxwhBpXxS6"
-              target="_blank"
-              rel="noreferrer"
-              className="mt-6 inline-block border border-line"
-            >
-              <img
-                src="/images/map-location.webp"
-                alt="Navjyot Engineering location on the map"
-                className="h-36 w-full max-w-xs object-cover"
+            <div className="mt-6 overflow-hidden border border-line">
+              <iframe
+                title="Navjyot Engineering location"
+                src={MAPS_EMBED_SRC}
+                className="h-44 w-full max-w-xs"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
               />
-            </a>
+            </div>
           </div>
 
           <div className="corner-marks border border-line bg-paper-2 p-6 sm:p-8">
